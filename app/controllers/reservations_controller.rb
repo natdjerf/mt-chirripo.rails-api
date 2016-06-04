@@ -33,7 +33,7 @@ class ReservationsController < OpenReadController
     @reservation = Reservation.find(params[:id])
 
     if @reservation.update(reservation_params)
-      head :no_content
+      render json: @reservation, location: @reservation
     else
       render json: @reservation.errors, status: :unprocessable_entity
     end
