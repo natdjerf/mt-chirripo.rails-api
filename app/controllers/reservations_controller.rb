@@ -4,7 +4,7 @@ class ReservationsController < OpenReadController
   # GET /reservations
   # GET /reservations.json
   def index
-    @reservations = Reservation.all
+    @reservations = current_user.reservations.all
 
     render json: @reservations
   end
