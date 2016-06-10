@@ -1,3 +1,7 @@
+Mount Chirripo front end: https://github.com/natdjerf/mt-chirripo.ember-auth
+
+
+
 ### Authentication
 
 | Verb   | URI Pattern            | Controller#Action |
