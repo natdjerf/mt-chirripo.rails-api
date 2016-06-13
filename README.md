@@ -1,4 +1,4 @@
-Mount Chirripo front end: https://github.com/natdjerf/mt-chirripo.ember-auth
+Visit Mount Chirripo Front-End: https://github.com/natdjerf/mt-chirripo.ember-auth
 
 
 
@@ -123,74 +123,6 @@ Response:
 ```md
 HTTP/1.1 204 No Content
 ```
-
-### Users
-
-| Verb | URI Pattern | Controller#Action |
-|------|-------------|-------------------|
-| GET  | `/users`    | `users#index`     |
-| GET  | `/users/1`  | `users#show`      |
-
-#### GET /users
-
-Request:
-
-```sh
-curl --include --request GET http://localhost:3000/users \
-  --header "Authorization: Token token=$TOKEN"
-```
-
-```sh
-TOKEN=33ad6372f795694b333ec5f329ebeaaa scripts/users.sh
-```
-
-Response:
-
-```md
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-
-{
-  "users": [
-    {
-      "id": 2,
-      "email": "another@example.email"
-    },
-    {
-      "id": 1,
-      "email": "an@example.email"
-    }
-  ]
-}
-```
-
-#### GET /users/:id
-
-Request:
-
-```sh
-curl --include --request GET http://localhost:3000/users/$ID \
-  --header "Authorization: Token token=$TOKEN"
-```
-
-```sh
-ID=2 TOKEN=33ad6372f795694b333ec5f329ebeaaa scripts/user.sh
-```
-
-Response:
-
-```md
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-
-{
-  "user": {
-    "id": 2,
-    "email": "another@example.email"
-  }
-}
-```
-
 
 ### RESERVATIONS
 
